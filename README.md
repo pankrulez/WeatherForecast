@@ -37,7 +37,7 @@ RainTomorrow — whether it will rain the next day.
 
 ├── src/
 
-│   └── logistic_regression.ipynb
+│   └── exploration.ipynb
 
 └── README.md
 
