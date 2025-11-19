@@ -29,7 +29,7 @@ RainTomorrow — whether it will rain the next day.
 
 ├── data/
 
-│   └── weatherAUS.csv
+│   └── AUS_weather.csv
 
 ├── notebooks/
 
@@ -37,7 +37,7 @@ RainTomorrow — whether it will rain the next day.
 
 ├── src/
 
-│   └── logistic_regression.py
+│   └── logistic_regression.ipynb
 
 └── README.md
 
