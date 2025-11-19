@@ -1,60 +1,67 @@
-Logistic Regression on Australian Weather Dataset
+### Logistic Regression on Australian Weather Dataset
 
 This project implements logistic regression to predict rainfall using the Australian Weather dataset. The workflow covers data loading, cleaning, exploratory analysis, feature engineering, model training, and evaluation.
 
-Dataset
+### Dataset
 
 The dataset includes daily weather observations from multiple Australian locations. Key variables include temperature, humidity, wind measurements, atmospheric pressure, and rainfall indicators.
 
-Model
+### Model
 
 A logistic regression model is used to predict the binary target variable:
 RainTomorrow — whether it will rain the next day.
 
-Steps:
+### Steps:
 
-Handle missing values
+- Handle missing values
 
-Encode categorical features
+- Encode categorical features
 
-Scale numeric features
+- Scale numeric features
 
-Split data into training and test sets
+- Split data into training and test sets
 
-Train logistic regression
+- Train logistic regression
 
-Evaluate accuracy, precision, recall, F1-score, and ROC-AUC
+- Evaluate accuracy, precision, recall, F1-score, and ROC-AUC
 
-Project Structure
+### Project Structure
+
 ├── data/
+
 │   └── weatherAUS.csv
+
 ├── notebooks/
+
 │   └── EDA_and_Model.ipynb
+
 ├── src/
+
 │   └── logistic_regression.py
+
 └── README.md
 
-How to Run
+### How to Run
 
-Install dependencies:
+- Install dependencies:
 
 pip install -r requirements.txt
 
 
-Run the model script:
+- Run the model script:
 
 python src/logistic_regression.py
 
-Output
+- Output
 
 The script logs model performance metrics and generates plots for:
 
-Feature distributions
+- Feature distributions
 
 Correlation matrix
 
 ROC curve
 
-Purpose
+### Purpose
 
 This repository is intended for learning and demonstrating end-to-end logistic regression modeling on a real-world dataset.
