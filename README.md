@@ -50,7 +50,7 @@ pip install -r requirements.txt
 
 - Run the model script:
 
-python src/logistic_regression.py
+python src/exploration.ipynb
 
 - Output
 
