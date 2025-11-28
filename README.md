@@ -27,31 +27,41 @@ RainTomorrow — whether it will rain the next day.
 
 ### Project Structure
 
+```
+WeatherForecast/
 ├── data/
-
-│   └── AUS_weather.csv
-
+│   └── raw/
+│       └── AUS_Weather.csv
 ├── notebooks/
-
-│   └── EDA_and_Model.ipynb
-
+│   ├── exploration.ipynb
+│   └── exploration2.ipynb
 ├── src/
-
-│   └── exploration.ipynb
-
-└── README.md
+│   ├── __init__.py
+│   ├── config.py
+│   ├── data.py
+│   ├── features.py
+│   ├── train.py
+│   └── predict.py
+├── models/
+│   └── weather_logreg.joblib       
+├── app.py                          
+├── requirements.txt
+├── README.md
+├── .gitignore
+└── LICENSE
+```
 
 ### How to Run
 
 - Install dependencies:
-
+```
 pip install -r requirements.txt
-
+```
 
 - Run the model script:
-
+```
 python src/exploration.ipynb
-
+```
 - Output
 
 The script logs model performance metrics and generates plots for:
