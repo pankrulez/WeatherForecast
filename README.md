@@ -119,7 +119,6 @@ pip install -r requirements.txt
 python src/exploration.ipynb
 ```
 - Output
->>>>>>> abfe4776b492a546d64883fb560c132ed54befe9
 
 Displays cleaned dataset preview
 
