@@ -34,25 +34,18 @@ This project builds an end-to-end **machine learning pipeline to predict whether
 
 ## 📂 Project Structure
 
-<<<<<<< HEAD
-```text
-=======
 ```
->>>>>>> abfe4776b492a546d64883fb560c132ed54befe9
 WeatherForecast/
 ├── data/
 │   └── raw/
 │       └── AUS_Weather.csv
-<<<<<<< HEAD
 ├── models/
 │   └── weather_logreg.joblib
 ├── notebooks/
 │   └── exploration.ipynb
-=======
 ├── notebooks/
 │   ├── exploration.ipynb
 │   └── exploration2.ipynb
->>>>>>> abfe4776b492a546d64883fb560c132ed54befe9
 ├── src/
 │   ├── __init__.py
 │   ├── config.py
@@ -60,7 +53,6 @@ WeatherForecast/
 │   ├── features.py
 │   ├── train.py
 │   └── predict.py
-<<<<<<< HEAD
 ├── app.py
 ├── requirements.txt
 ├── README.md
@@ -68,8 +60,8 @@ WeatherForecast/
 ```
 
 ## 🧠 Model Details
+```
 Algorithm: Logistic Regression
-=======
 ├── models/
 │   └── weather_logreg.joblib       
 ├── app.py                          
@@ -78,11 +70,9 @@ Algorithm: Logistic Regression
 ├── .gitignore
 └── LICENSE
 ```
->>>>>>> abfe4776b492a546d64883fb560c132ed54befe9
 
 Target Variable: RainTomorrow
 
-<<<<<<< HEAD
 Selected Features:
 
 MinTemp
