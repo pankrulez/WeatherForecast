@@ -1,67 +1,130 @@
-### Logistic Regression on Australian Weather Dataset
+# Australian Weather Rain Prediction 🌧️
 
-This project implements logistic regression to predict rainfall using the Australian Weather dataset. The workflow covers data loading, cleaning, exploratory analysis, feature engineering, model training, and evaluation.
+![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-ML-orange)
+![Streamlit](https://img.shields.io/badge/Streamlit-App-red)
+![Status](https://img.shields.io/badge/Status-Production%20Ready-success)
+![License](https://img.shields.io/badge/License-Open%20Source-brightgreen)
 
-### Dataset
+This project builds an end-to-end **machine learning pipeline to predict whether it will rain tomorrow in Australia**, using historical weather data. The project includes:
 
-The dataset includes daily weather observations from multiple Australian locations. Key variables include temperature, humidity, wind measurements, atmospheric pressure, and rainfall indicators.
+- Data cleaning and preprocessing
+- Feature engineering
+- Model training with scikit-learn
+- Model evaluation
+- An interactive **Streamlit web application** for:
+  - Data inspection & cleaning preview
+  - Real-time rain prediction
 
-### Model
+---
 
-A logistic regression model is used to predict the binary target variable:
-RainTomorrow — whether it will rain the next day.
+## 🚀 Features
 
-### Steps:
+- Modular project structure (no notebook dependency for training)
+- Automated data cleaning
+- Missing value handling using imputers
+- Logistic Regression classification model
+- Streamlit-based UI with:
+  - Data Cleaning & EDA page
+  - Rain Prediction page
+- Reproducible training pipeline
+- Production-ready model saving & loading
 
-- Handle missing values
+---
 
-- Encode categorical features
+## 📂 Project Structure
 
-- Scale numeric features
-
-- Split data into training and test sets
-
-- Train logistic regression
-
-- Evaluate accuracy, precision, recall, F1-score, and ROC-AUC
-
-### Project Structure
-
+```text
+WeatherForecast/
 ├── data/
-
-│   └── AUS_weather.csv
-
+│   └── raw/
+│       └── AUS_Weather.csv
+├── models/
+│   └── weather_logreg.joblib
 ├── notebooks/
-
-│   └── EDA_and_Model.ipynb
-
-├── src/
-
 │   └── exploration.ipynb
+├── src/
+│   ├── __init__.py
+│   ├── config.py
+│   ├── data.py
+│   ├── features.py
+│   ├── train.py
+│   └── predict.py
+├── app.py
+├── requirements.txt
+├── README.md
+└── .gitignore
+```
 
-└── README.md
+## 🧠 Model Details
+Algorithm: Logistic Regression
 
-### How to Run
+Target Variable: RainTomorrow
 
-- Install dependencies:
+Selected Features:
 
+MinTemp
+
+MaxTemp
+
+Humidity3pm
+
+Pressure3pm
+
+WindSpeed3pm
+
+RainToday
+
+Preprocessing:
+
+Numerical features → Median imputation + StandardScaler
+
+Categorical features → Mode imputation + OneHotEncoder
+
+### ⚙️ How to Run
+1️⃣ Install dependencies
+```
 pip install -r requirements.txt
+```
+2️⃣ Train the model
+```
+python -m src.train
+```
+This will generate:
 
+models/weather_logreg.joblib
 
-- Run the model script:
+3️⃣ Run the Streamlit app
+```
+streamlit run app.py
+```
+### 🖥️ Application Pages
+✅ Data Cleaning & EDA
 
-python src/exploration.ipynb
+Displays raw dataset
 
-- Output
+Shows missing values
 
-The script logs model performance metrics and generates plots for:
+Displays cleaned dataset preview
 
-- Feature distributions
+✅ Prediction Page
 
-Correlation matrix
+User inputs weather conditions
 
-ROC curve
+Outputs:
 
-### Purpose
+Rain / No Rain
 
-This repository is intended for learning and demonstrating end-to-end logistic regression modeling on a real-world dataset.
+Prediction probability
+
+### 📈 Future Enhancements
+Batch predictions via CSV upload
+
+Advanced models (XGBoost, Random Forest)
+
+Model performance visualizations
+
+Deployment on Streamlit Cloud
+
+### 📜 License
+This project is open-source and free to use for learning and experimentation.
