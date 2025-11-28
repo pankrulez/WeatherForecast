@@ -60,16 +60,6 @@ WeatherForecast/
 ```
 
 ## 🧠 Model Details
-```
-Algorithm: Logistic Regression
-├── models/
-│   └── weather_logreg.joblib       
-├── app.py                          
-├── requirements.txt
-├── README.md
-├── .gitignore
-└── LICENSE
-```
 
 Target Variable: RainTomorrow
 
