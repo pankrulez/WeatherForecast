@@ -108,7 +108,7 @@ streamlit run app.py
 Displays raw dataset
 
 Shows missing values
-=======
+
 - Install dependencies:
 ```
 pip install -r requirements.txt
