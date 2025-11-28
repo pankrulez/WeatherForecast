@@ -61,6 +61,8 @@ WeatherForecast/
 
 ## 🧠 Model Details
 
+Algorithm: Logistic Regression
+
 Target Variable: RainTomorrow
 
 Selected Features:
